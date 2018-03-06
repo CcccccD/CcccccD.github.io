@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ccccccd.github.io">
-  <title>Archives | Yao的博客</title>
+  <title>毕业设计踩坑记录（nodeJS+angular+mysql+NG ZORRO） | Yao的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我其实刻薄，不擅温言宽慰，惰于交流，说着说着就沉默，时常疏离，从不刻意维系。本就淡漠，拥有的也不比旁人多。自然不会祈求，你能把我记住多久。">
-<meta name="keywords" content="html5">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yao的博客">
-<meta property="og:url" content="//ccccccd.github.io/archives/index.html">
+  <meta name="description" content="后端(nodeJS,express) token  123456789var jwt=require(&apos;jwt-simple&apos;); // 引入jwt// 生成token var token = jwt.encode(&amp;#123;                        iss: user.userId,                        exp: expires">
+<meta name="keywords" content="express,毕业设计,angular,ng-zorro">
+<meta property="og:type" content="article">
+<meta property="og:title" content="毕业设计踩坑记录（nodeJS+angular+mysql+NG ZORRO）">
+<meta property="og:url" content="//ccccccd.github.io/2018/03/06/毕业设计/index.html">
 <meta property="og:site_name" content="Yao的博客">
-<meta property="og:description" content="我其实刻薄，不擅温言宽慰，惰于交流，说着说着就沉默，时常疏离，从不刻意维系。本就淡漠，拥有的也不比旁人多。自然不会祈求，你能把我记住多久。">
+<meta property="og:description" content="后端(nodeJS,express) token  123456789var jwt=require(&apos;jwt-simple&apos;); // 引入jwt// 生成token var token = jwt.encode(&amp;#123;                        iss: user.userId,                        exp: expires">
+<meta property="og:updated_time" content="2018-03-06T08:25:32.376Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yao的博客">
-<meta name="twitter:description" content="我其实刻薄，不擅温言宽慰，惰于交流，说着说着就沉默，时常疏离，从不刻意维系。本就淡漠，拥有的也不比旁人多。自然不会祈求，你能把我记住多久。">
+<meta name="twitter:title" content="毕业设计踩坑记录（nodeJS+angular+mysql+NG ZORRO）">
+<meta name="twitter:description" content="后端(nodeJS,express) token  123456789var jwt=require(&apos;jwt-simple&apos;); // 引入jwt// 生成token var token = jwt.encode(&amp;#123;                        iss: user.userId,                        exp: expires">
   
     <link rel="alternative" href="/atom.xml" title="Yao的博客" type="application/atom+xml">
   
@@ -144,36 +145,106 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-毕业设计" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/06/毕业设计/" class="archive-article-date">
-  	<time datetime="2018-03-06T05:16:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-06</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/06/毕业设计/">毕业设计踩坑记录（nodeJS+angular+mysql+NG ZORRO）</a>
+    <h1 class="article-title" itemprop="name">
+      毕业设计踩坑记录（nodeJS+angular+mysql+NG ZORRO）
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2018/03/06/毕业设计/" class="archive-article-date">
+  	<time datetime="2018-03-06T05:16:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="后端-nodeJS-express"><a href="#后端-nodeJS-express" class="headerlink" title="后端(nodeJS,express)"></a>后端(nodeJS,express)</h2><ol>
+<li><p>token</p>
+ <figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> jwt=require('jwt-simple'); <span class="comment">// 引入jwt</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 生成token</span></span><br><span class="line"> <span class="keyword">var</span> <span class="keyword">token</span> = jwt.<span class="keyword">encode</span>(&#123;</span><br><span class="line">                        iss: user.userId,</span><br><span class="line">                        exp: expires</span><br><span class="line">                    &#125;, utils.secret);</span><br><span class="line"> <span class="comment">// 解析token</span></span><br><span class="line"> <span class="keyword">var</span> decoded = jwt.<span class="keyword">decode</span>(<span class="keyword">token</span>, 'jobapp'); <span class="comment">// 'jobapp'是你的私钥</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>JWT就是一个字符串，经过加密处理与校验处理的字符串，形式为：’A.B.C’,A由JWT头部信息header加密得到,  B由JWT用到的身份验证信息json数据加密得到,C由A和B加密得到，是校验部分.<br> 步骤：<br> 初次登录：用户初次登录，输入用户名密码<br> 密码验证：服务器从数据库取出用户名和密码进行验证<br> 生成JWT：服务器端验证通过，根据从数据库返回的信息，以及预设规则，生成JWT<br> 返还JWT：服务器的HTTP RESPONSE中将JWT返还<br> 带JWT的请求：以后客户端发起请求，HTTP REQUEST HEADER中的Authorizatio字段都要有值，为JWT    </p>
+</blockquote>
+</li>
+<li><p>七牛云上传</p>
+ <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 导入依赖包</span></span><br><span class="line"><span class="keyword">var</span> qn = <span class="built_in">require</span>(<span class="string">'qn'</span>);</span><br><span class="line"><span class="keyword">var</span> path = <span class="built_in">require</span>(<span class="string">'path'</span>);</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>具体代码就不贴了，附上参考网站<a href="http://www.cnblogs.com/fayin/p/6855922.html" target="_blank" rel="noopener">http://www.cnblogs.com/fayin/p/6855922.html</a></p>
+<blockquote>
+<p>需要大家自己申请一个仓库，具体实现实录就是，前端不管用base64格式还是formdata传过来，  你都可以先保存一份在本地然后记住这个地址，用这个地址调用上面的方法。</p>
+</blockquote>
+</blockquote>
+</li>
+<li><p>md5加密</p>
+<figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// md5加密算法（百度）</span><br><span class="line">function <span class="type">MD5</span>(str)<span class="meta">&#123;...&#125;</span></span><br><span class="line">// 使用</span><br><span class="line"><span class="literal">result</span>[<span class="number">0</span>].password == utils.<span class="type">MD5</span>(user.userPassword)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>考虑到密码的安全性，我们将密码采用md5加密，注册时将密码加密后存入数据库，登录，修改密码时，<br>将加密后的与数据库冲读取的比较。</p>
+</blockquote>
+</li>
+<li>阿里短信验证接口<blockquote>
+<p>代码就不贴了，附上参考的网站 <a href="http://blog.csdn.net/u012251421/article/details/75578370" target="_blank" rel="noopener">http://blog.csdn.net/u012251421/article/details/75578370</a>  </p>
+<blockquote>
+<p>这一块和调用七牛云上传比较类似，有了上面的方法就是看你自己怎么整合到项目中了，主要坑点在找到一个可用的api调用方法，<br> 我找了很久，所以分享出来。 思路就是看你自己的业务逻辑什么时候需要发送验证码就调用公开出去的方法就可以了，<br>   注意这里的验证码起始是要你自己生成的，所以你还需要自己实现一个随机生成验证码的方法。有报错的话，官网都有错误原因，可以参考。</p>
+</blockquote>
+</blockquote>
+</li>
+<li>待更新…</li>
+</ol>
+<h2 id="前端（angular-antd-echarts）"><a href="#前端（angular-antd-echarts）" class="headerlink" title="前端（angular+antd+echarts）"></a>前端（angular+antd+echarts）</h2><ol>
+<li>css(flex布局)<blockquote>
+<p>这里觉得需要提一下，因为之前习惯了浮动加定位的布局方式，所以一直没有改变去使用flex布局（只有实在难以实现才会去想flex），<br>但是因为实习的时候公司大神推荐flex和grid布局，所以这次毕业设计中都优先采用了flex布局，这里也不贴代码了，大家可以参考阮一峰大神的博客<br>附上地址： <a href="http://www.ruanyifeng.com/blog/2015/07/flex-examples.html" target="_blank" rel="noopener">http://www.ruanyifeng.com/blog/2015/07/flex-examples.html</a><br> 使用下来觉得确实很方便，值得推荐 。~~~</p>
+</blockquote>
+</li>
+<li>angular 热加载<blockquote>
+<p>主要是开发的时候修改一些东西就不需要等待页面刷新了，使用下来确实感觉开发的更开心了~<br>代码就不贴了 ，附上参考的地址：<a href="https://www.jianshu.com/p/a6361cf7bb4c" target="_blank" rel="noopener">https://www.jianshu.com/p/a6361cf7bb4c</a><br>教程写的很清楚，照着来就可以了~~</p>
+</blockquote>
+</li>
+<li>echarts<blockquote>
+<p>同样的也没什么代码好贴的，用了ngx-echarts插件，大家到github上搜一下就可以了 。<br>这次使用遇到了一个坑就是不停的提示echarts is not defined ， 试了很多方法，后来删了依赖包用npm重新装了一次，<br>还有开着蓝灯好像也会出问题，确实npm有很多坑，希望越来越好吧，也可以试着用用yarn，都是后话了~</p>
+</blockquote>
+</li>
+<li>待更新…</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/paiZFB.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -197,122 +268,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://ccccccd.github.io/2018/03/06/毕业设计/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/02/22/18-2-22/" class="archive-article-date">
-  	<time datetime="2018-02-22T07:23:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-22</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/02/22/18-2-22/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">异步编程（callback-&gt;promise-&gt;rxjs）</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/22/18-2-22/">异步编程（callback-&gt;promise-&gt;rxjs）</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">异步</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/02/articleTest/" class="archive-article-date">
-  	<time datetime="2018-01-02T02:08:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/02/articleTest/">ES6</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ES6</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/02/hello-world/" class="archive-article-date">
-  	<time datetime="2018-01-02T01:27:14.324Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/02/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -333,8 +388,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

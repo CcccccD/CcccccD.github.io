@@ -15,7 +15,7 @@
 <meta property="og:url" content="//ccccccd.github.io/2018/03/06/毕业设计/index.html">
 <meta property="og:site_name" content="Yao的博客">
 <meta property="og:description" content="后端(nodeJS,express) token  123456789var jwt=require(&apos;jwt-simple&apos;); // 引入jwt// 生成token var token = jwt.encode(&amp;#123;                        iss: user.userId,                        exp: expires">
-<meta property="og:updated_time" content="2018-03-06T08:26:52.304Z">
+<meta property="og:updated_time" content="2018-03-06T08:37:47.388Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="毕业设计踩坑记录（nodeJS+angular+mysql+NG ZORRO）更新中...">
 <meta name="twitter:description" content="后端(nodeJS,express) token  123456789var jwt=require(&apos;jwt-simple&apos;); // 引入jwt// 生成token var token = jwt.encode(&amp;#123;                        iss: user.userId,                        exp: expires">
@@ -178,13 +178,13 @@
 <p>具体代码就不贴了，附上参考网站<a href="http://www.cnblogs.com/fayin/p/6855922.html" target="_blank" rel="noopener">http://www.cnblogs.com/fayin/p/6855922.html</a></p>
 <blockquote>
 <p>需要大家自己申请一个仓库，具体实现实录就是，前端不管用base64格式还是formdata传过来，  你都可以先保存一份在本地然后记住这个地址，用这个地址调用上面的方法。</p>
-</blockquote>
+<a id="more"></a></blockquote>
 </blockquote>
 </li>
 <li><p>md5加密</p>
-<figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// md5加密算法（百度）</span><br><span class="line">function <span class="type">MD5</span>(str)<span class="meta">&#123;...&#125;</span></span><br><span class="line">// 使用</span><br><span class="line"><span class="literal">result</span>[<span class="number">0</span>].password == utils.<span class="type">MD5</span>(user.userPassword)</span><br></pre></td></tr></table></figure>
+ <figure class="highlight nimrod"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// md5加密算法（百度）</span><br><span class="line">function <span class="type">MD5</span>(str)<span class="meta">&#123;...&#125;</span></span><br><span class="line">// 使用</span><br><span class="line"><span class="literal">result</span>[<span class="number">0</span>].password == utils.<span class="type">MD5</span>(user.userPassword)</span><br></pre></td></tr></table></figure>
 <blockquote>
-<p>考虑到密码的安全性，我们将密码采用md5加密，注册时将密码加密后存入数据库，登录，修改密码时，<br>将加密后的与数据库冲读取的比较。</p>
+<p>考虑到密码的安全性，我们将密码采用md5加密，注册时将密码加密后存入数据库，登录，修改密码时，<br> 将加密后的与数据库冲读取的比较。</p>
 </blockquote>
 </li>
 <li>阿里短信验证接口<blockquote>
@@ -458,6 +458,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">异步</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">express</a>
               </li>
              
@@ -471,10 +475,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ng-zorro</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">异步</a>
               </li>
              
               <li class="article-tag-list-item">

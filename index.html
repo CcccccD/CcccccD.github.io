@@ -146,6 +146,95 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-项目踩坑记录-2-关于npm和cnpm" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/03/15/项目踩坑记录-2-关于npm和cnpm/">项目踩坑记录(2)--关于npm和cnpm</a>
+    </h1>
+  
+
+        
+        <a href="/2018/03/15/项目踩坑记录-2-关于npm和cnpm/" class="archive-article-date">
+  	<time datetime="2018-03-15T05:45:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><blockquote>
+<p>最近一直在另一个项目组，原先的项目暂停了一会儿，今天jekins部署突然出了问题</p>
+</blockquote>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><blockquote>
+<p>简单描述一下问题就是，用cnpm安装依赖后项目可以打包成功，用npm 安装依赖后打包和运行会报错 。</p>
+</blockquote>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><blockquote>
+<p>下班回宿舍的地铁上请教了大神，大神说这种情况一般是网络问题导致丢包，但是大神顺口说了npm5以上新增了一个lock机制，  查阅了一下这个机制,说是模范了yarn，了解了一下这个package-lock.json的作用  。<br>直觉问题就出现在了这，早上到公司，删了这个文件，删了依赖，npm install ，一套操作过后果然可以了~</p>
+</blockquote>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
+<p>至于npm的lock大家还是自行去查阅资料吧 ，别人比我说的好太多了 。 这次问题应该是出在一开始用的cnpm去装依赖，后来又换成npm 。这里作一个记录。</p>
+</blockquote>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/03/15/项目踩坑记录-2-关于npm和cnpm/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-项目踩坑记录（1）-关于订阅" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -153,7 +242,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/03/14/项目踩坑记录（1）-关于订阅/">&#39;项目踩坑记录（1）--关于订阅&#39;</a>
+      <a class="article-title" href="/2018/03/14/项目踩坑记录（1）-关于订阅/">项目踩坑记录（1）--关于订阅</a>
     </h1>
   
 
@@ -167,14 +256,10 @@
     <div class="article-entry" itemprop="articleBody">
       
         <h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><blockquote>
-<p>目前在公司实习，实习过程中遇到过很多问题，但是因为时间问题或者个人懒的原因  都没有做好记录，这次恰好在实现echarts时遇到一些坑，所以打算记录下来，也算是开始。</p>
-</blockquote>
-<h3 id="说一下问题"><a href="#说一下问题" class="headerlink" title="说一下问题"></a>说一下问题</h3><blockquote>
-<p>因为考虑到图表很多，开始的时候准备写一个公共的组件去调用，在这个过程中发现了很多问题</p>
-</blockquote>
-<h5 id="第一点就是因为协同开发的原因，各个人需要的样式也不统一，也可能是组件封装的不好的原因吧，发现公共的组件并不能解决所有人的需求"><a href="#第一点就是因为协同开发的原因，各个人需要的样式也不统一，也可能是组件封装的不好的原因吧，发现公共的组件并不能解决所有人的需求" class="headerlink" title="第一点就是因为协同开发的原因，各个人需要的样式也不统一，也可能是组件封装的不好的原因吧，发现公共的组件并不能解决所有人的需求"></a>第一点就是因为协同开发的原因，各个人需要的样式也不统一，也可能是组件封装的不好的原因吧，发现公共的组件并不能解决所有人的需求</h5><h5 id="第二点就是因为后台返回的数据不能直接应用在echarts的配置上，所以需要第二次处理-。而且因为异步的原因，子组件又在ngInit生命周期里面做处理，所以导致每次都是拿的原始数据去做处理，-所以需要监听值的变化，联想do之前使用过的方法，所以采用了EventEmit对象，在拿到数据后手动触发，-在子组件再订阅。-因为这个组件使用了多次，又只用了一个监听器，所以导致每次触发都会执行多次逻辑，所以想到要取消订阅"><a href="#第二点就是因为后台返回的数据不能直接应用在echarts的配置上，所以需要第二次处理-。而且因为异步的原因，子组件又在ngInit生命周期里面做处理，所以导致每次都是拿的原始数据去做处理，-所以需要监听值的变化，联想do之前使用过的方法，所以采用了EventEmit对象，在拿到数据后手动触发，-在子组件再订阅。-因为这个组件使用了多次，又只用了一个监听器，所以导致每次触发都会执行多次逻辑，所以想到要取消订阅" class="headerlink" title="第二点就是因为后台返回的数据不能直接应用在echarts的配置上，所以需要第二次处理 。而且因为异步的原因，子组件又在ngInit生命周期里面做处理，所以导致每次都是拿的原始数据去做处理，  所以需要监听值的变化，联想do之前使用过的方法，所以采用了EventEmit对象，在拿到数据后手动触发，  在子组件再订阅。  因为这个组件使用了多次，又只用了一个监听器，所以导致每次触发都会执行多次逻辑，所以想到要取消订阅"></a>第二点就是因为后台返回的数据不能直接应用在echarts的配置上，所以需要第二次处理 。而且因为异步的原因，子组件又在ngInit生命周期里面做处理，所以导致每次都是拿的原始数据去做处理，  所以需要监听值的变化，联想do之前使用过的方法，所以采用了EventEmit对象，在拿到数据后手动触发，  在子组件再订阅。  因为这个组件使用了多次，又只用了一个监听器，所以导致每次触发都会执行多次逻辑，所以想到要取消订阅</h5><figure class="highlight kotlin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">this</span>.subscription = <span class="keyword">this</span>.opeSer.change.subscribe(<span class="keyword">val</span> =&gt; &#123;&#125;);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">   ngOnDestroy() &#123;</span><br><span class="line">    <span class="keyword">this</span>.subscription.unsubscribe();</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
-<p>#####上面的代码是在组件销毁时取消订阅 。</p>
-
+<p>目前在公司实习，实习过程中遇到过很多问题，但是因为时间问题或者个人懒的原因  都没有做好记录，这次恰好在实现echarts时遇到一些坑，所以打算记录下来，也算是开始。<br>
+        
+          <a class="article-more-a" href="/2018/03/14/项目踩坑记录（1）-关于订阅/#more">more >></a>
+        
       
 
       
@@ -660,6 +745,14 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">异步</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">ES6</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">express</a>
               </li>
              
@@ -673,14 +766,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">ng-zorro</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">异步</a>
-              </li>
-             
-              <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">ES6</a>
               </li>
              
               <li class="article-tag-list-item">

@@ -6,18 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="//ccccccd.github.io">
-  <title>Archives: 2018 | Yao的博客</title>
+  <title>项目踩坑记录(2)--关于npm和cnpm | Yao的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="我其实刻薄，不擅温言宽慰，惰于交流，说着说着就沉默，时常疏离，从不刻意维系。本就淡漠，拥有的也不比旁人多。自然不会祈求，你能把我记住多久。">
-<meta name="keywords" content="html5">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Yao的博客">
-<meta property="og:url" content="//ccccccd.github.io/archives/2018/index.html">
+  <meta name="description" content="场景 最近一直在另一个项目组，原先的项目暂停了一会儿，今天jekins部署突然出了问题  问题 简单描述一下问题就是，用cnpm安装依赖后项目可以打包成功，用npm 安装依赖后打包和运行会报错 。  解决 下班回宿舍的地铁上请教了大神，大神说这种情况一般是网络问题导致丢包，但是大神顺口说了npm5以上新增了一个lock机制，  查阅了一下这个机制,说是模范了yarn，了解了一下这个package-">
+<meta name="keywords" content="angular,项目">
+<meta property="og:type" content="article">
+<meta property="og:title" content="项目踩坑记录(2)--关于npm和cnpm">
+<meta property="og:url" content="//ccccccd.github.io/2018/03/15/项目踩坑记录-2-关于npm和cnpm/index.html">
 <meta property="og:site_name" content="Yao的博客">
-<meta property="og:description" content="我其实刻薄，不擅温言宽慰，惰于交流，说着说着就沉默，时常疏离，从不刻意维系。本就淡漠，拥有的也不比旁人多。自然不会祈求，你能把我记住多久。">
+<meta property="og:description" content="场景 最近一直在另一个项目组，原先的项目暂停了一会儿，今天jekins部署突然出了问题  问题 简单描述一下问题就是，用cnpm安装依赖后项目可以打包成功，用npm 安装依赖后打包和运行会报错 。  解决 下班回宿舍的地铁上请教了大神，大神说这种情况一般是网络问题导致丢包，但是大神顺口说了npm5以上新增了一个lock机制，  查阅了一下这个机制,说是模范了yarn，了解了一下这个package-">
+<meta property="og:updated_time" content="2018-03-15T05:59:07.804Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Yao的博客">
-<meta name="twitter:description" content="我其实刻薄，不擅温言宽慰，惰于交流，说着说着就沉默，时常疏离，从不刻意维系。本就淡漠，拥有的也不比旁人多。自然不会祈求，你能把我记住多久。">
+<meta name="twitter:title" content="项目踩坑记录(2)--关于npm和cnpm">
+<meta name="twitter:description" content="场景 最近一直在另一个项目组，原先的项目暂停了一会儿，今天jekins部署突然出了问题  问题 简单描述一下问题就是，用cnpm安装依赖后项目可以打包成功，用npm 安装依赖后打包和运行会报错 。  解决 下班回宿舍的地铁上请教了大神，大神说这种情况一般是网络问题导致丢包，但是大神顺口说了npm5以上新增了一个lock机制，  查阅了一下这个机制,说是模范了yarn，了解了一下这个package-">
   
     <link rel="alternative" href="/atom.xml" title="Yao的博客" type="application/atom+xml">
   
@@ -144,36 +145,72 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-项目踩坑记录-2-关于npm和cnpm" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      项目踩坑记录(2)--关于npm和cnpm
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/15/项目踩坑记录-2-关于npm和cnpm/" class="archive-article-date">
+
+        
+        <a href="/2018/03/15/项目踩坑记录-2-关于npm和cnpm/" class="archive-article-date">
   	<time datetime="2018-03-15T05:45:22.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/15/项目踩坑记录-2-关于npm和cnpm/">项目踩坑记录(2)--关于npm和cnpm</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="场景"><a href="#场景" class="headerlink" title="场景"></a>场景</h3><blockquote>
+<p>最近一直在另一个项目组，原先的项目暂停了一会儿，今天jekins部署突然出了问题</p>
+</blockquote>
+<h3 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h3><blockquote>
+<p>简单描述一下问题就是，用cnpm安装依赖后项目可以打包成功，用npm 安装依赖后打包和运行会报错 。</p>
+</blockquote>
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><blockquote>
+<p>下班回宿舍的地铁上请教了大神，大神说这种情况一般是网络问题导致丢包，但是大神顺口说了npm5以上新增了一个lock机制，  查阅了一下这个机制,说是模范了yarn，了解了一下这个package-lock.json的作用  。<br>直觉问题就出现在了这，早上到公司，删了这个文件，删了依赖，npm install ，一套操作过后果然可以了~</p>
+</blockquote>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
+<p>至于npm的lock大家还是自行去查阅资料吧 ，别人比我说的好太多了 。 这次问题应该是出在一开始用的cnpm去装依赖，后来又换成npm 。这里作一个记录。</p>
+</blockquote>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/paiZFB.jpg">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -189,214 +226,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://ccccccd.github.io/2018/03/15/项目踩坑记录-2-关于npm和cnpm/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/14/项目踩坑记录（1）-关于订阅/" class="archive-article-date">
-  	<time datetime="2018-03-14T01:32:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-14</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/03/14/项目踩坑记录（1）-关于订阅/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">项目踩坑记录（1）--关于订阅</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/14/项目踩坑记录（1）-关于订阅/">项目踩坑记录（1）--关于订阅</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">项目</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/03/06/毕业设计/" class="archive-article-date">
-  	<time datetime="2018-03-06T05:16:51.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-06</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/03/06/毕业设计/">毕业设计踩坑记录（nodeJS+angular+mysql+NG ZORRO）更新中...</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">express</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">毕业设计</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">angular</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ng-zorro</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/02/22/18-2-22/" class="archive-article-date">
-  	<time datetime="2018-02-22T07:23:35.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-02-22</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/02/22/18-2-22/">异步编程（callback-&gt;promise-&gt;rxjs）</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">异步</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/02/articleTest/" class="archive-article-date">
-  	<time datetime="2018-01-02T02:08:42.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/02/articleTest/">ES6</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">ES6</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/01/02/hello-world/" class="archive-article-date">
-  	<time datetime="2018-01-02T01:27:14.324Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-01-02</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/01/02/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -417,8 +346,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

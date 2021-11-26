@@ -139,4 +139,4 @@ social_icons:
 deploy:
   type: git
   repo: git@github.com:CcccccD/CcccccD.github.io.git
-  branch: gh-pages
+  branch: main

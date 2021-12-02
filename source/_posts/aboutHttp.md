@@ -2,6 +2,7 @@
 title: HTTP协议相关
 date: 2021-11-29 13:58:43
 tags: 网络协议
+categories: 前端
 ---
 
 ## HTTP协议相关

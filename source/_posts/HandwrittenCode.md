@@ -251,3 +251,76 @@ JSONP 是利用script标签没有跨域限制的特性来解决跨域问题实�
                 console.log(err)
             })
 ```
+
+
+### call,apply
+
+#### 解释一下
+call和apply这两个方法的功能是：用来修改函数的执行上下文(this)。
+call(thisObj,arg1,arg2,arg3,……)
+A.fn.call(B,"dance"); 
+区别就是参数传递的方式
+
+#### 手写代码
+
+```
+       // call模拟
+        Function.prototype.call_ = function (obj) {
+            //判断是否为null或者undefined,同时考虑传递参数不是对象情况
+            obj = obj ? Object(obj) : window;
+            var args = [];
+            // 注意i从1开始
+            for (var i = 1, len = arguments.length; i < len; i++) {
+                args.push("arguments[" + i + "]");
+            };
+            obj.fn = this; // 此时this就是函数fn
+            var result = eval("obj.fn(" + args + ")"); // 执行fn
+            delete obj.fn; //删除fn
+            return result;
+        };
+        // apply模拟
+        Function.prototype.apply_ = function (obj, arr) {
+            obj = obj ? Object(obj) : window;
+            obj.fn = this;
+            var result;
+            if (!arr) {
+                result = obj.fn();
+            } else {
+                var args = [];
+                // 注意这里的i从0开始
+                for (var i = 0, len = arr.length; i < len; i++) {
+                    args.push("arr[" + i + "]");
+                };
+                result = eval("obj.fn(" + args + ")"); // 执行fn
+            };
+            delete obj.fn; //删除fn
+            return result;
+        };
+
+
+        // ES6 call
+        Function.prototype.call_ = function (obj) {
+            obj = obj ? Object(obj) : window;
+            obj.fn = this;
+            // 利用拓展运算符直接将arguments转为数组
+            let args = [...arguments].slice(1);
+            let result = obj.fn(...args);
+
+            delete obj.fn
+            return result;
+        };
+        // ES6 apply
+        Function.prototype.apply_ = function (obj, arr) {
+            obj = obj ? Object(obj) : window;
+            obj.fn = this;
+            let result;
+            if (!arr) {
+                result = obj.fn();
+            } else {
+                result = obj.fn(...arr);
+            };
+
+            delete obj.fn
+            return result;
+        };
+```

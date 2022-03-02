@@ -90,7 +90,7 @@ function debounce3(fn, wait) {
 
 #### new做了哪些事
 1. 定义一个空对象
-2.`Object.setPrototypeOf(obj, fn.prototype)` 即 `obj.__proto__ = Animal.prototype`， 建立了 obj 对象的原型链：`obj->Animal.prototype->Object.prototype->null`
+2. `Object.setPrototypeOf(obj, fn.prototype)` 即 `obj.__proto__ = Animal.prototype`， 建立了 obj 对象的原型链：`obj->Animal.prototype->Object.prototype->null`
 3. 执行构造函数中的代码（为这个新对象添加属性并绑定this）；
 4. 返回新对象 （如果构造函数返回一个对象就会返回构造函数返回的对象）。
 ```

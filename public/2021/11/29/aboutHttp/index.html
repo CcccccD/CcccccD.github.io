@@ -16,17 +16,17 @@
   <meta name="description" content="">
   <meta name="author" content="yaoC">
   <meta name="keywords" content="">
-  <meta name="description" content="HTTP协议相关HTTP的全称是什么？超文本传输协议，HyperText Transfer Protocol，这几个单词可别发走音了。所谓的超文本就是带标记的文本，刚开始的时候是指HTML。现在HTTP协议传输的东西可不只是HTML了，什么表单啊JSON啊XML啊文件啊都可以传输。 HTTP常用的状态码有哪些？400 Bad Request 用于参数验证，少了一个参数或者参数类型错误之类的。502">
+  <meta name="description" content="HTTP协议相关HTTP的全称是什么？超文本传输协议，HyperText Transfer Protocol，这几个单词可别发走音了。所谓的超文本就是带标记的文本， 刚开始的时候是指HTML。现在HTTP协议传输的东西可不只是HTML了，什么表单啊JSON啊XML啊文件啊都可以传输。 HTTP常用的状态码有哪些？400 Bad Request 用于参数验证，少了一个参数或者参数类型错误之类的。50">
 <meta property="og:type" content="article">
 <meta property="og:title" content="HTTP协议相关">
 <meta property="og:url" content="http://example.com/2021/11/29/aboutHttp/index.html">
 <meta property="og:site_name" content="cc">
-<meta property="og:description" content="HTTP协议相关HTTP的全称是什么？超文本传输协议，HyperText Transfer Protocol，这几个单词可别发走音了。所谓的超文本就是带标记的文本，刚开始的时候是指HTML。现在HTTP协议传输的东西可不只是HTML了，什么表单啊JSON啊XML啊文件啊都可以传输。 HTTP常用的状态码有哪些？400 Bad Request 用于参数验证，少了一个参数或者参数类型错误之类的。502">
+<meta property="og:description" content="HTTP协议相关HTTP的全称是什么？超文本传输协议，HyperText Transfer Protocol，这几个单词可别发走音了。所谓的超文本就是带标记的文本， 刚开始的时候是指HTML。现在HTTP协议传输的东西可不只是HTML了，什么表单啊JSON啊XML啊文件啊都可以传输。 HTTP常用的状态码有哪些？400 Bad Request 用于参数验证，少了一个参数或者参数类型错误之类的。50">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://s3.bmp.ovh/imgs/2021/11/9edd247283374236.png">
 <meta property="og:image" content="https://s3.bmp.ovh/imgs/2021/11/f08205bdbf44c61d.png">
 <meta property="article:published_time" content="2021-11-29T05:58:43.000Z">
-<meta property="article:modified_time" content="2021-12-02T06:31:38.948Z">
+<meta property="article:modified_time" content="2022-08-14T03:17:29.510Z">
 <meta property="article:author" content="yaoC">
 <meta property="article:tag" content="网络协议">
 <meta name="twitter:card" content="summary_large_image">
@@ -73,7 +73,7 @@
   </script>
   <script  src="/js/utils.js" ></script>
   <script  src="/js/color-schema.js" ></script>
-<meta name="generator" content="Hexo 5.4.0"></head>
+<meta name="generator" content="Hexo 5.4.2"></head>
 
 
 <body>
@@ -240,7 +240,7 @@
             <h1 style="display: none">HTTP协议相关</h1>
             
             <div class="markdown-body">
-              <h2 id="HTTP协议相关"><a href="#HTTP协议相关" class="headerlink" title="HTTP协议相关"></a>HTTP协议相关</h2><h3 id="HTTP的全称是什么？"><a href="#HTTP的全称是什么？" class="headerlink" title="HTTP的全称是什么？"></a>HTTP的全称是什么？</h3><p>超文本传输协议，<code>HyperText Transfer Protocol</code>，这几个单词可别发走音了。所谓的超文本就是带标记的文本，刚开始的时候是指HTML。现在HTTP协议传输的东西可不只是HTML了，什么表单啊JSON啊XML啊文件啊都可以传输。</p>
+              <h2 id="HTTP协议相关"><a href="#HTTP协议相关" class="headerlink" title="HTTP协议相关"></a>HTTP协议相关</h2><h3 id="HTTP的全称是什么？"><a href="#HTTP的全称是什么？" class="headerlink" title="HTTP的全称是什么？"></a>HTTP的全称是什么？</h3><p>超文本传输协议，<code>HyperText Transfer Protocol</code>，这几个单词可别发走音了。所谓的超文本就是带标记的文本， 刚开始的时候是指HTML。现在HTTP协议传输的东西可不只是HTML了，什么表单啊JSON啊XML啊文件啊都可以传输。</p>
 <h3 id="HTTP常用的状态码有哪些？"><a href="#HTTP常用的状态码有哪些？" class="headerlink" title="HTTP常用的状态码有哪些？"></a>HTTP常用的状态码有哪些？</h3><p>400 Bad Request 用于参数验证，少了一个参数或者参数类型错误之类的。<br>502 Bad Gateway 后端服务挂掉或者压力过大的时候， Nginx接到的请求无法及时传递给后端的服务进行处理，这个时候就会出现502错误。这个也非常常见，知乎豆瓣网站经常开小差的时候发生的错误就是这个。<br>304 Not Modified 极少人知道这个状态码，因为大部分后端开发者的前端Javascript开发经验都严重不足。当你用Chrome打开一个经常访问的网站，看看Network传输的静态资源就可以看到很多304状态码。它表示该资源被浏览器缓存了不需要重新请求服务器。<br>401 Unauthorized 权限不足，这个很好理解，就是资源存在但是不让你访问。<br>403 Forbidden 资源禁止访问，如果你的IP列为黑名单了，就会发生这种错误。<br>其实还有很多状态码，小编也没去好好研究了，因为实在不会在工作中用到。感兴趣的请继续阅读维基百科</p>
 <h3 id="HTTP有哪些Method？"><a href="#HTTP有哪些Method？" class="headerlink" title="HTTP有哪些Method？"></a>HTTP有哪些Method？</h3><p>GET 不解释，如果读者不知道，建议别在IT圈混了。<br>POST 一般用于创建或者修改资源，在RESTFUL规范里面POST只用来创建资源，并返回201 Created状态码表示创建成功。不过大多数网站都不遵循严格的RESTFUL规范，POST拿来做修改资源的事也是非常常见的。<br>PUT 对应于POST表示创建资源，PUT用于修改资源，PUT的参数必须是对象的全部属性，修改是覆盖式全部修改。<br>PATCH 对应于PUT的参数是对象的全部属性，PATCH的参数是部分属性，修改是局部字段修改。<br>DELETE 用于删除资源。<br>HEAD 不常用，跟GET差不多，区别就是不返回Body内容，只返回HTTP头信息。一般用于获取资源的元信息，比如长度，修改时间等<br>OPTIONS 跨域相关，后面再讲。</p>
 <h3 id="HTTP协议格式是怎样的？"><a href="#HTTP协议格式是怎样的？" class="headerlink" title="HTTP协议格式是怎样的？"></a>HTTP协议格式是怎样的？</h3><p>HTTP的请求和响应的消息协议是一样的，分为三个部分，起始行、消息头和消息体。这三个部分以CRLF作为分隔符。最后一个消息头有两个CRLF，用来表示消息头部的结束。<br><img src="https://s3.bmp.ovh/imgs/2021/11/9edd247283374236.png" srcset="/img/loading.gif" lazyload alt="alt HTTP协议格式"></p>

@@ -8,7 +8,7 @@ categories: 前端
 ## HTTP协议相关
 
 ### HTTP的全称是什么？
-超文本传输协议，`HyperText Transfer Protocol`，这几个单词可别发走音了。所谓的超文本就是带标记的文本，刚开始的时候是指HTML。现在HTTP协议传输的东西可不只是HTML了，什么表单啊JSON啊XML啊文件啊都可以传输。
+超文本传输协议，`HyperText Transfer Protocol`，这几个单词可别发走音了。所谓的超文本就是带标记的文本， 刚开始的时候是指HTML。现在HTTP协议传输的东西可不只是HTML了，什么表单啊JSON啊XML啊文件啊都可以传输。
 
 ### HTTP常用的状态码有哪些？
 400 Bad Request 用于参数验证，少了一个参数或者参数类型错误之类的。
